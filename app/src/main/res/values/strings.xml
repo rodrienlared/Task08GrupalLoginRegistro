@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Task08GrupalLoginRegistro</string>
+    <string name="nombre_usuario">Nombre Usuario:</string>
+    <string name="contra">Contraseña:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="futbol">Futbol</string>
+    <string name="aficiones">Aficiones:</string>
+    <string name="cv_resumido">CV resumido:</string>
+    <string name="nacionalidad">Nacionalidad:</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="registrar">Registrar</string>
+    <string name="h">H</string>
+    <string name="m">M</string>
+    <string-array name="nacio">
+        <item>Español</item>
+        <item>Francés</item>
+        <item>Ecuatoriano</item>
+        <item>Alemán</item>
+    </string-array>
+</resources>

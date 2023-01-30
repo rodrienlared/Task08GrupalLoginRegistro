@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/sexo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFutbol"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/futbol"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTenis"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerNacio" />
+
+    <EditText
+        android:id="@+id/editTextTextContraseña"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="110dp"
+        android:gravity="right"
+        android:text="@string/nombre_usuario"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/pass"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/contra"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sexo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aficiones"
+        android:layout_width="116dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/aficiones"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nacionalidad" />
+
+    <TextView
+        android:id="@+id/textViewCV"
+        android:layout_width="116dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/cv_resumido"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aficiones" />
+
+    <TextView
+        android:id="@+id/nacionalidad"
+        android:layout_width="116dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/nacionalidad"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sexo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTenis"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:text="Tenis"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxFutbol"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerNacio" />
+
+    <Spinner
+        android:id="@+id/spinnerNacio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/nacio"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/radioH" />
+
+    <EditText
+        android:id="@+id/MultiLine"
+        android:layout_width="283dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCV" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A3A2A2"
+        android:text="@string/cancelar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/registrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MultiLine"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A3A2A2"
+        android:text="@string/registrar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancelar"
+        app:layout_constraintTop_toBottomOf="@+id/MultiLine"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="187dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="53dp" />
+
+    <RadioButton
+        android:id="@+id/radioH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/h"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioM"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextContraseña" />
+
+    <RadioButton
+        android:id="@+id/radioM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/m"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/radioH"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextContraseña" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
